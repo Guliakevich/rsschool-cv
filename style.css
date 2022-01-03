@@ -1,1 +1,82 @@
-!css file
+@font-face {
+    font-family: Raleway;
+    src: url("/assets/fonts/Raleway/Raleway-Italic-VariableFont_wght.ttf");
+}
+* {
+    box-sizing: border-box;
+}
+.header {
+    border: 1px solid rgba(32, 102, 102, 0.541);
+    background-color: rgba(32, 102, 102, 0.349);
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer {
+    border: 1px solid rgb(20, 78, 82);
+    background-color: rgb(32, 116, 116);
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    list-style: none;
+}
+.nav-link{
+    padding: 0 8px;
+    line-height: 30px;
+    font-size: 15px;
+    color: rgb(32, 102, 102);
+    text-decoration: none;
+    transition: .3s
+}
+.nav-item :hover{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(15, 49, 49);
+}
+html {
+     scroll-behavior: smooth;
+ }
+ .section-item a {
+color: rgb(18, 56, 56);
+text-decoration: none;
+transition: color 0.5s;
+ }
+ .section-item a:hover{
+     color: rgb(17, 53, 53)
+ }
+ .section {
+     margin: 10px;
+     width: 45%;
+ }
+ .cont-list{
+     list-style: none;
+ }
+ @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+  .rsshool-logo {
+      margin: 0px 40px;
+  }
